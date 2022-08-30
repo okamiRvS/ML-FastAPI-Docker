@@ -21,5 +21,5 @@ train_test_data = dp.create_train_test_data(prepared_data['input'],
 model = mt.run_model_training(train_test_data['x_train'], train_test_data['x_test'], 
                            train_test_data['y_train'], train_test_data['y_test'])
 
-# Save the trained model and vectorizer
+# Save the trained model
 joblib.dump(model, './models/test_model.pkl')
